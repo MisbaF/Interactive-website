@@ -1,5 +1,10 @@
 .App {
+  flex-direction: column;
   text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -14,25 +19,37 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /*flex-direction: column;*/
+  z-index: 99;
+  position: fixed;
+  top: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+#card{
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.7);
+  background-image: linear-gradient(to bottom, rgba(255, 255 ,255,1), rbga(255,255,255,0.2));
+   /*background: rgba(255, 255, 255, 0.2); rgba alpha allows transperancy */
+  backdrop-filter: blur(5px);
+   width: 50vw; /*vw is viewport width*/
+   height: 85vh; /*viewport height*/
+   border-radius: 30px;
+
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#profile-image{
+  width: 7rem; /*pixel but scales with changing the size*/
+  height: 7rem;
+  border-radius:50%;
+  
 }
+

@@ -1,7 +1,11 @@
+import {homeData} from "../data/homeData.js";
+
+
 export default function Home() {
+
     return (
-        <h1>
-        This is my home
-        </h1>
+        <div>
+            <p>{homeData.description} </p>
+        </div>
     )
 }
